@@ -1,0 +1,34 @@
+body {
+  background: black;
+  color: white;
+}
+
+button {
+  margin: 1em;
+}
+
+p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.examples {
+  column-count: 1;
+}
+
+@media (min-width: 520px) {
+  .examples {
+    column-count: 3;
+    column-gap: 40px;
+  }
+}
+
+.examples > div {
+  width: 100%;
+  display: inline-block;
+}
